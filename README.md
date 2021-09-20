@@ -1,4 +1,4 @@
-[![Django-app Actions Status](https://github.com/vlad397/yamdb_final/workflows/Django-app/badge.svg)](https://github.com/vlad397/yamdb_final/actions)
+[![Django-app Status](https://github.com/vlad397/yamdb_final/workflows/Django-app/badge.svg)](https://github.com/vlad397/yamdb_final/actions)
 # api_yamdb
 ### Описание
 API с возможностью просматривать существующие в базе категории, жанры и тайтлы на различного рода медиа объекты, оставлять к ним комментарии и давать оценки
