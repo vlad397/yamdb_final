@@ -1,3 +1,4 @@
+![Django-app workflow](https://github.com/vlad397/yamdb_final/actions/workflows/Django-app/badge.svg)
 # api_yamdb
 ### Описание
 API с возможностью просматривать существующие в базе категории, жанры и тайтлы на различного рода медиа объекты, оставлять к ним комментарии и давать оценки
