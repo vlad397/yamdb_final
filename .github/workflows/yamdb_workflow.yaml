@@ -20,12 +20,13 @@ jobs:
 
     - name: Test with flake8 and django tests
       run: |
+        touch .env 
+        echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
         python -m flake8
         cd .
         python manage.py test
         pytest
-      env: 
-        DB_ENGINE = 'django.db.backends.postgresql'
+
   
   build_and_push_to_docker_hub:
     runs-on: ubuntu-latest
