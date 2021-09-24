@@ -9,7 +9,6 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
     image: vlad397/yamdb_final:latest
     restart: always
     volumes:
