@@ -21,8 +21,7 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         touch .env
-        echo SECRET_KEY=${{ secrets.SECRET_KEY }} > .env
-        echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
+        echo DB_ENGINE=${{ secrets.DB_ENGINE }} > .env
         echo DB_NAME=${{ secrets.DB_NAME }} >> .env
         python -m flake8
         cd .
@@ -91,4 +90,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен!!
+        message: ${{ github.workflow }} успешно выполнен!
